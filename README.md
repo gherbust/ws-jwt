@@ -30,6 +30,7 @@ Taller para explicar implementacion de JWT con una palabra secreta.
 
 #### Endpoints
 Crear token:
+
 ``
 curl --location 'http://localhost:8080/api/v1/login' \
 --header 'Content-Type: application/json' \
@@ -41,17 +42,19 @@ curl --location 'http://localhost:8080/api/v1/login' \
 ``
 
 Validar
+
 ``
 curl --location 'http://localhost:8080/api/v1/valid' \
 --header 'Authorization: tu JWT'
 ``
 
 Get Pets
+
 ``
 curl --location 'http://localhost:8080/api/v1/pets' \
 --header 'Authorization: tu JWT'
 ``
 
-Bibligrafias:
+Bibliografías:
 - go jwt https://pkg.go.dev/github.com/golang-jwt/jwt/v5@v5.0.0
- - gin Web framework middleware https://gin-gonic.com/zh-tw/docs/examples/using-middleware/
+- gin Web framework middleware https://gin-gonic.com/zh-tw/docs/examples/using-middleware/
